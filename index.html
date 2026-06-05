@@ -22,7 +22,7 @@
   html { scroll-behavior: smooth; }
   body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden; }
   body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; z-index: 0; }
- 
+
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: rgba(7,13,26,0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
   .nav-logo { display: flex; align-items: center; gap: 10px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; }
   .nav-logo svg { color: var(--cyan); }
@@ -31,11 +31,11 @@
   .nav-links a:hover { color: var(--text); }
   .btn-contact { background: var(--cyan); color: var(--bg); padding: 9px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.2s; font-family: 'Syne', sans-serif; }
   .btn-contact:hover { background: var(--text); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,212,255,0.3); }
- 
+
   section { position: relative; z-index: 1; }
   .section-title { font-family: 'Syne', sans-serif; font-size: 42px; font-weight: 800; text-align: center; margin-bottom: 12px; }
   .section-line { width: 60px; height: 3px; background: linear-gradient(90deg, var(--cyan), var(--cyan2)); margin: 0 auto 60px; border-radius: 2px; }
- 
+
   /* HERO */
   #hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 24px 80px; }
   .hero-badge { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 999px; padding: 7px 18px; font-size: 13px; color: var(--muted); margin-bottom: 32px; background: rgba(255,255,255,0.02); animation: fadeUp 0.6s ease both; }
@@ -50,7 +50,7 @@
   .btn-secondary { border: 1px solid var(--border); color: var(--text); padding: 14px 30px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; font-family: 'Syne', sans-serif; transition: all 0.2s; background: rgba(255,255,255,0.02); }
   .btn-secondary:hover { border-color: var(--cyan); background: var(--glow); transform: translateY(-2px); }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
- 
+
   /* ABOUT */
   #about { padding: 100px 48px; max-width: 1100px; margin: 0 auto; }
   .about-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 48px; }
@@ -60,12 +60,12 @@
   .about-icon { width: 36px; height: 36px; background: var(--glow); border: 1px solid rgba(0,212,255,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--cyan); }
   .about-item h4 { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
   .about-item p { font-size: 14px; color: var(--muted); }
- 
+
   /* INTERESTS strip */
   .interests-strip { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; padding-top: 36px; border-top: 1px solid var(--border); }
   .interest-pill { display: flex; align-items: center; gap: 8px; background: rgba(0,212,255,0.06); border: 1px solid rgba(0,212,255,0.18); border-radius: 999px; padding: 7px 16px; font-size: 13px; color: var(--text); font-weight: 500; }
   .interest-pill svg { color: var(--cyan); flex-shrink: 0; }
- 
+
   /* PROJECTS */
   #projects { padding: 100px 48px; max-width: 1200px; margin: 0 auto; }
   .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
@@ -92,7 +92,7 @@
   .highlights li { font-size: 13px; color: #8fa3c0; padding: 3px 0; display: flex; align-items: center; gap: 8px; }
   .highlights li::before { content: ''; width: 5px; height: 5px; background: var(--cyan); border-radius: 50%; flex-shrink: 0; }
   .project-meta { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); margin-top: 16px; }
- 
+
   /* SKILLS */
   #skills { padding: 100px 48px; max-width: 1200px; margin: 0 auto; }
   .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -109,7 +109,7 @@
   .tool-item { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; font-size: 13px; color: var(--muted); transition: all 0.2s; text-align: center; }
   .tool-item:hover { border-color: rgba(0,212,255,0.3); color: var(--text); background: var(--glow); }
   .tool-item svg { color: var(--cyan); }
- 
+
   /* PHILOSOPHY */
   #philosophy { padding: 100px 48px; max-width: 1200px; margin: 0 auto; }
   .philosophy-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -118,7 +118,7 @@
   .phil-icon { width: 44px; height: 44px; background: var(--glow); border: 1px solid rgba(0,212,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; color: var(--cyan); }
   .philosophy-card h3 { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 10px; }
   .philosophy-card p { font-size: 13px; color: var(--muted); line-height: 1.7; }
- 
+
   /* BEYOND DESIGN */
   #beyond { padding: 100px 48px; max-width: 1100px; margin: 0 auto; }
   .beyond-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -127,7 +127,7 @@
   .beyond-icon { width: 48px; height: 48px; background: var(--glow); border: 1px solid rgba(0,212,255,0.2); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; color: var(--cyan); font-size: 22px; }
   .beyond-card h3 { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 8px; }
   .beyond-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
- 
+
   /* CONTACT */
   #contact { padding: 100px 48px; max-width: 700px; margin: 0 auto; }
   .contact-card { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 56px; text-align: center; }
@@ -140,7 +140,7 @@
   .contact-row svg { color: var(--cyan); }
   .contact-row a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
   .contact-row a:hover { color: var(--cyan); }
- 
+
   footer { padding: 32px 48px; text-align: center; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; position: relative; z-index: 1; }
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
@@ -148,7 +148,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">
@@ -164,7 +164,7 @@
     <li><a href="#contact" class="btn-contact">Contact</a></li>
   </ul>
 </nav>
- 
+
 <!-- HERO -->
 <section id="hero">
   <div class="hero-badge">Aspiring Game Developer · Singapore</div>
@@ -179,7 +179,7 @@
     <a href="#contact" class="btn-secondary">Get in Touch</a>
   </div>
 </section>
- 
+
 <!-- TOP SKILLS STRIP -->
 <section style="position:relative;z-index:1;padding: 0 48px 80px;">
   <div style="max-width:1100px;margin:0 auto;">
@@ -208,7 +208,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <h2 class="section-title">About Me</h2>
@@ -281,14 +281,14 @@
     </div>
   </div>
 </section>
- 
+
 <!-- PROJECTS -->
 <section id="projects">
   <h2 class="section-title">Featured Projects</h2>
   <div class="section-line"></div>
   <p style="text-align:center;color:var(--muted);margin-top:-40px;margin-bottom:48px;font-size:15px;">Explore my game design work</p>
   <div class="projects-grid">
- 
+
     <div class="project-card">
       <div class="project-thumb" style="cursor:pointer;" onclick="window.open('https://youtu.be/EQaFG_h3-zs','_blank')">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0d1629 0%,#162040 60%,#0a1f35 100%);z-index:0;"></div>
@@ -321,7 +321,7 @@
         </div>
       </div>
     </div>
- 
+
     <div class="project-card">
       <div class="project-thumb" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=knOEUuaGcrc','_blank')">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0d1629 0%,#162040 60%,#0a1f35 100%);z-index:0;"></div>
@@ -355,7 +355,7 @@
         </div>
       </div>
     </div>
- 
+
     <div class="project-card">
       <div class="project-thumb" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=a5DGiXP5QKY','_blank')">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0d1629 0%,#162040 60%,#0a1f35 100%);z-index:0;"></div>
@@ -389,7 +389,7 @@
         </div>
       </div>
     </div>
- 
+
     <div class="project-card">
       <div class="project-thumb" style="cursor:pointer;" onclick="window.open('https://youtu.be/S_BnVmg_hUg','_blank')">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0d1629 0%,#162040 60%,#0a1f35 100%);z-index:0;"></div>
@@ -422,16 +422,16 @@
         </div>
       </div>
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- SKILLS -->
 <section id="skills">
   <h2 class="section-title">Skills &amp; Tools</h2>
   <div class="section-line"></div>
   <div class="skills-grid">
- 
+
     <div class="skill-card">
       <div class="skill-card-header">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
@@ -443,7 +443,7 @@
       <div class="skill-row"><div class="skill-label"><span>2D Animation</span><span class="skill-pct">52%</span></div><div class="skill-bar"><div class="skill-fill" data-width="52"></div></div></div>
       <div class="skill-row"><div class="skill-label"><span>Substance Painter</span><span class="skill-pct">50%</span></div><div class="skill-bar"><div class="skill-fill" data-width="50"></div></div></div>
     </div>
- 
+
     <div class="skill-card">
       <div class="skill-card-header">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
@@ -455,7 +455,7 @@
       <div class="skill-row"><div class="skill-label"><span>UX/UI Design</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
       <div class="skill-row"><div class="skill-label"><span>Figma</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
     </div>
- 
+
     <div class="skill-card">
       <div class="skill-card-header">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
@@ -466,10 +466,10 @@
       <div class="skill-row"><div class="skill-label"><span>Time Management</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
       <div class="skill-row"><div class="skill-label"><span>Communication</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- PHILOSOPHY -->
 <section id="philosophy">
   <h2 class="section-title">My Design Philosophy</h2>
@@ -505,7 +505,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- BEYOND DESIGN -->
 <section id="beyond">
   <h2 class="section-title">Beyond Design</h2>
@@ -544,34 +544,80 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <h2 class="section-title">Get In Touch</h2>
   <div class="section-line"></div>
   <p style="text-align:center;color:var(--muted);margin-top:-40px;margin-bottom:48px;font-size:15px;">Let's create something meaningful together</p>
-  <div class="contact-card">
-    <div class="contact-avatar">YK</div>
-    <div class="contact-name">Choo Yan Kuan</div>
-    <div class="contact-title">Aspiring Game Developer · Singapore Polytechnic</div>
-    <hr class="contact-divider">
-    <div class="contact-items">
-      <div class="contact-row">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Singapore
-      </div>
-      <div class="contact-row">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        <a href="https://www.linkedin.com/in/choo-yan-kuan" target="_blank">linkedin.com/in/choo-yan-kuan</a>
+
+  <!-- BUSINESS CARD FLIP -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:20px;">
+
+    <div style="font-size:13px;color:var(--muted);">Click the card to flip</div>
+
+    <div id="bizcard" onclick="this.classList.toggle('flipped')" style="width:540px;height:300px;cursor:pointer;perspective:1000px;position:relative;">
+      <div style="position:absolute;inset:0;transform-style:preserve-3d;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);" id="bizcard-inner">
+
+        <!-- FRONT -->
+        <div style="position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#111d35;border:1px solid #1e2f4d;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:36px 40px;box-shadow:0 24px 60px rgba(0,0,0,0.5);">
+          <!-- top accent -->
+          <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#00d4ff,transparent);"></div>
+          <!-- content -->
+          <div>
+            <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#00d4ff;margin-bottom:16px;">Game Developer · 3D Artist · UX/UI</div>
+            <div style="font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:#e8edf5;line-height:1.1;margin-bottom:6px;">Choo Yan Kuan</div>
+            <div style="font-size:13px;color:#6b7fa3;">Singapore Polytechnic · MAD Animation & Game Design</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="height:1px;background:#1e2f4d;margin-bottom:4px;"></div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#b0bdd4;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              chooyankuan.github.io
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#b0bdd4;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/choo-yan-kuan
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#b0bdd4;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Singapore
+            </div>
+          </div>
+          <!-- bottom accent -->
+          <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#0099cc,transparent);"></div>
+        </div>
+
+        <!-- BACK -->
+        <div style="position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);background:#0d1629;border:1px solid #1e2f4d;border-radius:16px;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:0 24px 60px rgba(0,0,0,0.5);">
+          <!-- top accent -->
+          <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#00d4ff,transparent);"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+            <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#6b7fa3;">Scan to view portfolio</div>
+            <div style="background:#070d1a;border:1px solid rgba(0,212,255,0.25);border-radius:12px;padding:14px;">
+              <div id="qrcode-contact"></div>
+            </div>
+            <div style="font-size:12px;color:#6b7fa3;">chooyankuan.github.io</div>
+          </div>
+          <!-- bottom accent -->
+          <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#0099cc,transparent);"></div>
+        </div>
+
       </div>
     </div>
+
   </div>
 </section>
- 
+
+<style>
+  #bizcard.flipped #bizcard-inner { transform: rotateY(180deg); }
+</style>
+
 <footer>
   <p>© 2026 Choo Yan Kuan · Aspiring Game Developer · Singapore Polytechnic</p>
 </footer>
- 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -583,7 +629,7 @@
     });
   }, { threshold: 0.3 });
   document.querySelectorAll('.skill-card').forEach(card => observer.observe(card));
- 
+
   const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -598,8 +644,17 @@
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     fadeObserver.observe(el);
   });
+
+  // Generate QR code
+  new QRCode(document.getElementById("qrcode-contact"), {
+    text: "https://chooyankuan.github.io",
+    width: 160,
+    height: 160,
+    colorDark: "#00d4ff",
+    colorLight: "#070d1a",
+    correctLevel: QRCode.CorrectLevel.H
+  });
 </script>
- 
+
 </body>
 </html>
- 
